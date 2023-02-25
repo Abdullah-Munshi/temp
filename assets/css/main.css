@@ -8,6 +8,7 @@
 :root {
   --primaryColor: #00f098;
   --secondaryColor: #0b3b5a;
+  --violet: #6534ff;
 }
 html {
   font-size: 62.5%;
@@ -633,6 +634,32 @@ ol {
   padding-top: 10rem;
 }
 /* inspection page css end */
+
+/* pricing page css start */
+.ins-c-g-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+.insc-img img {
+  border-radius: 1.2rem;
+  opacity: 0.7;
+}
+
+.dv {
+  bottom: 1.8rem;
+  color: var(--primaryColor);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.insc-item h4 {
+  margin-top: 1.8rem;
+  font-size: 1.8rem;
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+/* pricing page css end */
 
 /* Media Query */
 
