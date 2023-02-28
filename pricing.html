@@ -165,15 +165,20 @@
       </div>
       <section class="section inspection-country-area">
         <div class="container px-4 px-lg-5">
-          <div class="ttl-twin-pole d-flex justify-content-between">
+          <div class="ttl-twin-pole d-block d-md-flex justify-content-between">
             <div class="section-title mb-0">
               <h2 class="mb-0">Choisissez le pays de l'inspection</h2>
             </div>
 
-            <div>
-              <p>Inspection en</p>
-              <select name="" id="">
-                <option value="">Country</option>
+            <div
+              class="ttl-right d-flex align-items-center justify-content-end"
+            >
+              <p class="">Inspection en</p>
+              <select name="country" id="country" class="form-select">
+                <option value="">Country 1</option>
+                <option value="">Country 2</option>
+                <option value="">Country 3</option>
+                <option value="">Country 4</option>
               </select>
             </div>
           </div>
@@ -247,13 +252,15 @@
           <div class="section-title text-center">
             <h2>Que comprend le prix de notre prestation ?</h2>
           </div>
-          <ul class="service-include text-center">
-            <li>Déplacement du spécialiste</li>
-            <li>Inspection du véhicule</li>
-            <li>Rapport digital détaillé</li>
-            <li>Dossier photos complet</li>
-            <li>Garantie 3 mois incluse</li>
-          </ul>
+          <div class="service-include-outer">
+            <ul class="service-include text-center">
+              <li>Déplacement du spécialiste</li>
+              <li>Inspection du véhicule</li>
+              <li>Rapport digital détaillé</li>
+              <li>Dossier photos complet</li>
+              <li>Garantie 3 mois incluse</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section cta-area">
