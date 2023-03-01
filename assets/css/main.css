@@ -822,6 +822,22 @@ ol {
 .access-title p {
   font-size: 1.8rem;
 }
+.access-page::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 720px;
+  height: 100vh;
+  background-image: url(../img/access-bg.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 140% bottom;
+  opacity: 0.1;
+  pointer-events: none;
+}
 /* login page css end */
 
 /* Media Query */
