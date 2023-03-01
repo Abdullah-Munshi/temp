@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main Css  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <header class="header-area type-2 bg-white d-flex align-items-center">
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="row align-items-center">
+          <div class="col-8 d-flex align-items flex-wrap">
+            <a href="#" class="d-inline-block logo"
+              ><img src="assets/img/logo.svg" alt="" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="m_menu_outer">
+        <div class="m_menu_inner d-flex flex-column justify-content-around">
+          <ul class="main-menu">
+            <li><a href="#" class="d-inline-block">Inspection</a></li>
+            <li><a href="#" class="d-inline-block">Pricing</a></li>
+            <li><a href="#" class="d-inline-block">FAQ</a></li>
+            <li><a href="#" class="d-inline-block">Contact</a></li>
+          </ul>
+
+          <div class="btns">
+            <a
+              href="#"
+              class="btn sm dark profile-btn d-flex align-items-center min-w-120 mb-3"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#ffffff"
+                class="me-2"
+                width="20px"
+                height="19px"
+              >
+                <path
+                  data-v-d22a987c=""
+                  d="M 12 3 C 9.8027056 3 8 4.8027056 8 7 C 8 9.1972944 9.8027056 11 12 11 C 14.197294 11 16 9.1972944 16 7 C 16 4.8027056 14.197294 3 12 3 z M 12 5 C 13.116414 5 14 5.8835859 14 7 C 14 8.1164141 13.116414 9 12 9 C 10.883586 9 10 8.1164141 10 7 C 10 5.8835859 10.883586 5 12 5 z M 12 14 C 10.255047 14 8.1871638 14.409783 6.4492188 15.095703 C 5.5802462 15.438663 4.7946961 15.84605 4.1660156 16.369141 C 3.5373351 16.892231 3 17.599384 3 18.5 L 3 21 L 21 21 L 21 20 L 21 18.5 C 21 17.599384 20.462665 16.892231 19.833984 16.369141 C 19.205304 15.84605 18.419754 15.438663 17.550781 15.095703 C 15.812836 14.409783 13.744953 14 12 14 z M 12 16 C 13.414047 16 15.346055 16.373999 16.818359 16.955078 C 17.554512 17.245618 18.176961 17.591965 18.554688 17.90625 C 18.932412 18.220535 19 18.434616 19 18.5 L 19 19 L 5 19 L 5 18.5 C 5 18.434616 5.0675867 18.220535 5.4453125 17.90625 C 5.8230383 17.591965 6.4454882 17.245618 7.1816406 16.955078 C 8.6539455 16.373999 10.585953 16 12 16 z"
+                  fill="#ffffff"
+                ></path>
+              </svg>
+              My Account</a
+            >
+            <button type="submit" class="btn w-100 text-center">
+              Schedule an inspection
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="access-page f_montserrat d-flex align-items-center">
+        <div class="mx-width mx-auto">
+          <div class="access-title text-center">
+            <p class="mb-0">Mon compte</p>
+            <h2 class="text-uppercase">Connexion</h2>
+
+            <h4>Renseignez vos identifiants</h4>
+          </div>
+
+          <form class="access-fm login-form needs-validation" novalidate>
+            <div class="has-validation">
+              <div class="invalid-feedback">Please choose a username.</div>
+            </div>
+
+            <div class="input-inside">
+              <input
+                type="text"
+                id="email"
+                class="form-control"
+                placeholder="Adresse Email"
+                required
+              />
+            </div>
+            <div class="input-inside">
+              <input
+                type="text"
+                id="password"
+                class="form-control"
+                placeholder="Mot de passe"
+                required
+              />
+            </div>
+
+            <div class="access-btns">
+              <a href="#" class="btn border-style text-uppercase"
+                >Mot de passe oublié ?</a
+              >
+              <button type="submit" class="btn submit-btn text-uppercase">
+                Connexion
+              </button>
+            </div>
+
+            <div class="ut-contents text-center">
+              <p>
+                <strong>
+                  Découvrir notre service :<a
+                    href="#"
+                    class="d-inline-block ms-1"
+                    >Inspection de véhicule.</a
+                  >
+                </strong>
+              </p>
+              <p>
+                Vous souhaitez rejoindre la communauté Trustoo ?<a
+                  href="#"
+                  class="d-inline-block ms-1"
+                  >Devenir spécialiste Trustoo.</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap Js and popper js (for dropdown and modals) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Reference: Bootstrap 5 form validation  -->
+    <script src="assets/js/formValidation.js"></script>
+  </body>
+</html>

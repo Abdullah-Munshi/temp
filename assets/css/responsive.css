@@ -1,0 +1,232 @@
+@media screen and (max-width: 1199px) {
+  .section {
+    padding: 8rem 0;
+  }
+  .footer-area {
+    padding-top: 8rem;
+  }
+  .ch-images img {
+    max-height: 215px;
+  }
+  .ch-images img.ch-1 {
+    right: 10rem;
+  }
+  .ins-c-g-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .service-include-outer {
+    padding: 5rem 3rem 7rem 3rem;
+  }
+  .inspection-country-area {
+    padding-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header-bottom-content-box {
+    min-height: 40rem;
+    padding: 3rem 3rem;
+  }
+  .logo {
+    max-width: 140px;
+    max-height: 35px;
+  }
+  .section {
+    padding: 6rem 0;
+  }
+  .section.choose-area {
+    padding-bottom: 4rem;
+  }
+  .single-card {
+    margin-bottom: 1rem;
+  }
+  .cd-content p {
+    margin-top: 1rem;
+  }
+  .cd-thumb {
+    margin-bottom: 1.8rem;
+  }
+  .report-outer-box::after {
+    width: calc(100% + 65rem);
+    height: 60%;
+    content: "";
+    position: absolute;
+    background-color: var(--secondaryColor);
+    border-radius: 100% 100% 2.4rem 2.4rem;
+    top: auto;
+    left: 50%;
+    transform: translateY(0%) translateX(-50%);
+    bottom: 0;
+  }
+  .report-outer-box {
+    padding: 2.4rem;
+    padding-top: 26rem;
+  }
+  .section.vehicle-area {
+    padding-bottom: 1rem;
+  }
+  .footer-area {
+    padding-top: 6rem;
+  }
+
+  .ch-images {
+    position: unset !important;
+    width: 100%;
+    height: auto;
+    transform: translateY(0);
+  }
+  .ch-images img {
+    position: unset !important;
+    max-height: 100% !important;
+    width: 100%;
+    height: auto !important;
+    margin-bottom: 2rem;
+    transform: translateY(0);
+  }
+  .choice-content-box::before {
+    content: none;
+  }
+  .choice-content-box {
+    background-color: var(--secondaryColor);
+    border-radius: 2.4rem;
+    padding: 2.5rem;
+  }
+  .choice-bg {
+    display: none;
+  }
+  .ch-wrap {
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+  .choice-area {
+    padding-top: 6rem;
+  }
+  .cta-box {
+    padding: 2.4rem;
+  }
+  .service-include {
+    display: block;
+    text-align: left !important;
+  }
+
+  .service-include {
+    display: block;
+    text-align: left !important;
+  }
+  .service-include li {
+    padding: 0;
+    padding-left: 2rem;
+  }
+  .service-include li {
+    padding-bottom: 2rem;
+  }
+  .service-include-outer {
+    padding: 4rem;
+  }
+  .service-include li::after {
+    left: 0;
+    top: 9px;
+  }
+  .service-include li:not(:first-child)::before {
+    width: 1px;
+    height: 100%;
+    left: 0;
+    top: -75%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .col-4 .btn.sm {
+    min-width: auto;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    justify-content: center;
+  }
+  .header-area {
+    min-height: 64px;
+    padding: 1.5rem 0;
+  }
+  .header-bottom-area {
+    padding-top: 7rem;
+  }
+  .section-title h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .h_btm_content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0;
+  }
+  .header-bottom-content-box {
+    min-height: auto;
+    padding: 4rem 3rem;
+  }
+  .h_btm_content {
+    margin-bottom: 0;
+  }
+  .section {
+    padding: 5rem 0;
+  }
+  .section.choose-area {
+    padding-bottom: 1.5rem;
+  }
+  .header-area.stuck {
+    min-height: 64px;
+  }
+  .report-outer-box {
+    padding: 2.4rem;
+    padding-top: 24rem;
+  }
+  .report-outer-box::after {
+    height: 64%;
+  }
+  .footer-top-part {
+    grid-template-columns: 1fr;
+  }
+  .footer-middle-part h2 {
+    font-size: 2.8rem;
+  }
+  .footer-area {
+    padding-top: 5rem;
+  }
+  .section.vehicle-area {
+    padding-bottom: 0.5rem;
+  }
+  .ins-c-g-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    grid-row-gap: 2.4rem;
+  }
+  .dv {
+    font-size: 3.4rem;
+  }
+
+  .ttl-twin-pole {
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+  .ttl-twin-pole .section-title {
+    margin-bottom: 1.2rem !important;
+  }
+  .service-include li {
+    font-size: 1.8rem;
+  }
+  .service-include li:not(:first-child)::before {
+    width: 1px;
+    height: 150%;
+    left: 0;
+    top: calc(-100% + -1rem);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .access-btns {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .access-title h4 {
+    font-size: 1.8rem;
+  }
+  .access-title h2 {
+    font-size: 2.4rem;
+  }
+}
