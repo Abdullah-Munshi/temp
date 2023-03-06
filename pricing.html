@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Pricing page</title>
 
     <!-- Google Fonts -->
@@ -23,6 +28,7 @@
 
     <!-- Main Css  -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <!-- This div responsible for header sticky position detection -->
@@ -154,6 +160,20 @@
                     type="text"
                     placeholder="Astra"
                   />
+                </div>
+                <div class="field">
+                  <label for="model" class="label">Année</label>
+                  <select
+                    name="year"
+                    id="year"
+                    class="form-select border-0 ps-0"
+                  >
+                    <option value="">Select</option>
+                    <option value="">2010</option>
+                    <option value="">2009</option>
+                    <option value="">2008</option>
+                    <option value="">2007</option>
+                  </select>
                 </div>
                 <button type="submit" class="btn w-100 text-center">
                   Demander mon inspection

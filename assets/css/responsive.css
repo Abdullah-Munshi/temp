@@ -132,6 +132,39 @@
     left: 0;
     top: -75%;
   }
+
+  .sp-flex-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-gap: 0;
+  }
+  .sp-lr {
+    margin-bottom: 4rem;
+  }
+  .sp-step {
+    margin-top: 2rem;
+  }
+  .section.sp-area {
+    padding-bottom: 0rem;
+    padding-top: 8rem;
+  }
+  .specialist-page .report-outer-box.for-skills::after {
+    height: 65%;
+  }
+  .report-img img {
+    height: 40% !important;
+  }
+  .cta-box .report-img img {
+    height: 100% !important;
+  }
+  .section.sp-area {
+    padding-bottom: 0rem;
+    padding-top: 6rem;
+  }
+  .contact-g-wrapper {
+    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 2.4rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .col-4 .btn.sm {
@@ -215,6 +248,69 @@
     height: 150%;
     left: 0;
     top: calc(-100% + -1rem);
+  }
+  .para-blk-title {
+    font-size: 2.4rem;
+  }
+  .ins-c-g-wrapper.for-pf-area {
+    grid-template-columns: 1fr;
+  }
+  .report-outer-box.for-skills .section-title h2 {
+    font-size: 2.1rem;
+  }
+  .sp-step {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+  .para-blk-title {
+    font-size: 2.4rem;
+  }
+  .terms-privacy-area {
+    padding: 5rem 0;
+    padding-bottom: 5rem;
+  }
+  .guide-area {
+    padding: 5rem 0;
+    padding-bottom: 5rem;
+  }
+  .terms-privacy-area .para-blk:not(:last-child),
+  .guide-area .para-blk:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  .para-blk.text-side-2,
+  .para-blk.text-side-2 p {
+    font-size: 1.6rem;
+  }
+  .fq-g-wrapper {
+    display: none;
+  }
+  .faq-points li {
+    margin-bottom: 0 !important;
+  }
+  .faq-area {
+    padding-top: 3rem;
+  }
+  .faq-content h4 {
+    font-size: 2rem;
+  }
+  .faq-content {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .contact-g-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contact-area {
+    padding: 5rem 0;
+    padding-bottom: 3rem;
+  }
+  .faq-content li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem !important;
+  }
+  .faq-content li::before {
+    top: 1px;
   }
 }
 

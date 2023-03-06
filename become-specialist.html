@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.ico"
-      type="image/x-icon"
-    />
-    <title>Inspection page</title>
+    <title>Become Specialist page</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -116,7 +111,7 @@
       </div>
     </header>
 
-    <main class="inspection-page">
+    <main class="specialist-page">
       <div class="header-bottom-area position-relative">
         <div class="container px-4 px-lg-5 position-relative z-index-1">
           <div
@@ -132,89 +127,63 @@
               />
               <div class="overlay position-absolute top-0 start-0 end-0"></div>
             </div>
-            <div class="h_btm_content text-center position-relative z-index-1">
-              <p>Votre partenaire de confiance</p>
-              <h1>N°1 de l'inspection de véhicules d'occasion</h1>
+            <div class="h_btm_content text-start position-relative z-index-1 mb-0">
+              <p>Rejoignez notre communauté de spécialistes partout en Europe </p>
+              <h1 class="mb-5">Devenez spécialiste Trustoo</h1>
+              <a href="#" class="btn bg_white">Postuler<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" width="20px" height="20px" class="ms-2">
+                <path d="M16.384 11.375H4v1.25h12.384a7.693 7.693 0 00-.951.808c-1.244 1.244-2.058 2.909-2.058 4.567h1.25c0-1.342.686-2.677 1.692-3.683 1.006-1.006 2.341-1.692 3.683-1.692v-1.25c-1.342 0-2.677-.686-3.683-1.692C15.311 8.677 14.625 7.342 14.625 6h-1.25c0 1.658.814 3.323 2.058 4.567.295.295.614.566.951.808z"></path>
+              </svg>
+            </a>
             </div>
-            <form
-              class="inspection-form position-relative z-index-1 mx-auto d-none d-md-block"
-            >
-              <span class="ring position-absolute ring-1"></span>
-              <span class="ring position-absolute ring-2"></span>
-              <span class="ring position-absolute ring-3"></span>
-              <div class="fields overflow-hidden">
-                <div class="field">
-                  <label for="brand" class="label">Marque</label>
-                  <input
-                    id="brand"
-                    class="form-control border-0 px-0"
-                    type="text"
-                    placeholder="Opel"
-                  />
-                </div>
-                <div class="field">
-                  <label for="model" class="label">Modèle</label>
-                  <input
-                    id="model"
-                    class="form-control border-0 px-0"
-                    type="text"
-                    placeholder="Astra"
-                  />
-                </div>
-                <div class="field">
-                  <label for="model" class="label">Année</label>
-                  <select
-                    name="year"
-                    id="year"
-                    class="form-select border-0 ps-0"
-                  >
-                    <option value="">Select</option>
-                    <option value="">2010</option>
-                    <option value="">2009</option>
-                    <option value="">2008</option>
-                    <option value="">2007</option>
-                  </select>
-                </div>
-                <button type="submit" class="btn w-100 text-center">
-                  Demander mon inspection
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>
-      <section class="choice-area">
+      <section class="section pf-area">
         <div class="container px-4 px-lg-5">
-          <div class="choice-content-box position-relative">
-            <div class="choice-bg position-absolute top-0 h-100">
-              <img
-                class="h-100 w-100"
-                src="assets/img/tool-banner-bg.svg"
-                alt=""
-              />
-            </div>
-            <div class="ch-images position-absolute end-0">
-              <img class="ch-1" src="assets/img/ch-1.jpeg" alt="" />
-              <img class="ch-2" src="assets/img/ch-2.jpeg" alt="" />
-            </div>
-            <div class="ch-wrap position-relative z-index-1">
-              <div class="section-title white">
-                <h2>
-                  Faites inspecter le véhicule d'occasion de
-                  <span>votre choix.</span>
-                </h2>
+          <div class="section-title">
+            <h2 class="mb-3">Profils recherchés</h2>
+            <p class="color-grey">Faites nous parvenir votre candidature !</p>
+          </div>
+
+          <div class="ins-c-g-wrapper for-pf-area">
+            <div class="insc-item">
+              <div class="pf-img">
+                <img class="img-fluid w-100" src="assets/img/pf-1.jpg" alt="" />
               </div>
-              <ul class="report-list">
-                <li>Voiture, Deux-Roues, Camping-Car, Utilitaire</li>
-                <li>Avant l'achat</li>
-                <li>Par un professionnel de l'automobile</li>
-                <li>
-                  En France, Allemagne, Belgique, Suisse, Espagne, Italie, au
-                  Luxembourg et aux Pays-Bas
-                </li>
+              <h4>Ingénieur automobile</h4>
+            </div>
+            <div class="insc-item">
+              <div class="pf-img">
+                <img class="img-fluid w-100" src="assets/img/pf-2.jpg" alt="" />
+              </div>
+              <h4>Chef d’atelier</h4>
+            </div>
+            <div class="insc-item">
+              <div class="pf-img">
+                <img class="img-fluid w-100" src="assets/img/pf-3.jpg" alt="" />
+              </div>
+              <h4>Contrôleur technique</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills-area">
+        <div class="container px-4 px-lg-5">
+          <div
+            class="report-outer-box for-skills position-relative radius-large overflow-hidden"
+          >
+            <div class="dq position-relative z-index-1">
+              <div class="section-title white">
+                <h2>Quelles sont les qualités et compétences requises ?</h2>
+              </div>
+              <ul class="report-list mb-5">
+                <li>Rigueur</li>
+                <li>Réactivité</li>
+                <li>Sens du service</li>
+                <li>Expérience en réparation et maintenance</li>
               </ul>
               <a href="#" class="btn bg_primary"
-                >Demander mon inspection<svg
+                >Postuler<svg
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                   fill-rule="evenodd"
@@ -231,153 +200,70 @@
                 </svg>
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="section choose-area">
-        <div class="container px-4 px-lg-5">
-          <div class="section-title">
-            <h2>Une inspection complète sur 200 points de contrôle</h2>
-            <p class="color-grey">Pour vous assurer de faire le bon choix.</p>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <a href="#" class="single-card d-block">
-                <div>
-                  <div class="cd-thumb">
-                    <img
-                      class="img-fluid w-100"
-                      src="assets/img/c-1.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="cd-content">
-                    <h5>Compartiment moteur</h5>
-                    <ul class="report-list type-2 mt-4">
-                      <li class="position-relative">
-                        Prédispositions aux pannes
-                      </li>
-                      <li class="position-relative">
-                        Niveaux des différents liquides
-                      </li>
-                      <li class="position-relative">
-                        État global des composants
-                      </li>
-                      <li class="position-relative">Fuites potentielles</li>
-                    </ul>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <a href="#" class="single-card d-block">
-                <div>
-                  <div class="cd-thumb">
-                    <img
-                      class="img-fluid w-100"
-                      src="assets/img/c-2.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="cd-content">
-                    <h5>Compartiment moteur</h5>
-                    <ul class="report-list type-2 mt-4">
-                      <li class="position-relative">
-                        Prédispositions aux pannes
-                      </li>
-                      <li class="position-relative">
-                        Niveaux des différents liquides
-                      </li>
-                      <li class="position-relative">
-                        État global des composants
-                      </li>
-                      <li class="position-relative">Fuites potentielles</li>
-                    </ul>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <a href="#" class="single-card d-block">
-                <div>
-                  <div class="cd-thumb">
-                    <img
-                      class="img-fluid w-100"
-                      src="assets/img/c-3.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="cd-content">
-                    <h5>Compartiment moteur</h5>
-                    <ul class="report-list type-2 mt-4">
-                      <li class="position-relative">
-                        Prédispositions aux pannes
-                      </li>
-                      <li class="position-relative">
-                        Niveaux des différents liquides
-                      </li>
-                      <li class="position-relative">
-                        État global des composants
-                      </li>
-                      <li class="position-relative">Fuites potentielles</li>
-                    </ul>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <a href="#" class="single-card d-block">
-                <div>
-                  <div class="cd-thumb">
-                    <img
-                      class="img-fluid w-100"
-                      src="assets/img/c-4.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="cd-content">
-                    <h5>Compartiment moteur</h5>
-                    <ul class="report-list type-2 mt-4">
-                      <li class="position-relative">
-                        Prédispositions aux pannes
-                      </li>
-                      <li class="position-relative">
-                        Niveaux des différents liquides
-                      </li>
-                      <li class="position-relative">
-                        État global des composants
-                      </li>
-                      <li class="position-relative">Fuites potentielles</li>
-                    </ul>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="report-area">
-        <div class="container px-4 px-lg-5">
-          <div
-            class="report-outer-box position-relative radius-large overflow-hidden"
-          >
-            <div class="position-relative z-index-1">
-              <div class="section-title white">
-                <h2>Notre rapport d'inspection</h2>
-              </div>
-              <h3 class="report-type-badge">100% digital</h3>
-              <ul class="report-list">
-                <li>200 points de contrôle</li>
-                <li>Commentaires, photos et avis du spécialiste</li>
-                <li>Disponible immédiatement après l'inspection</li>
-              </ul>
-            </div>
             <div class="report-img position-absolute top-0 end-0 h-100">
               <img
                 class="img-fluid w-100 h-100"
-                src="assets/img/report-img.jpeg"
+                src="assets/img/skill-bg.jpeg"
                 alt=""
               />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section sp-area">
+        <div class="container px-3 px-lg-4">
+          <div class="sp-flex-wrapper">
+            <div class="sp-lf">
+              <div class="section-title">
+                <h2>Comment devenir spécialiste Trustoo ?</h2>
+              </div>
+              <ul class="sp-step">
+                <li data-value="01">
+                  <span class="num-step">01</span>
+                  <div>
+                    <h4>Inscrivez-vous</h4>
+                    <p>
+                      Renseignez vos coordonnées et documents sur la plateforme.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="num-step">02</span>
+                  <div>
+                    <h4>Réservez un entretien de qualification</h4>
+                    <p>
+                      Prenez rendez-vous avec un de nos chargés de recrutement à
+                      une date à laquelle vous êtes disponible.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="num-step">03</span>
+                  <div>
+                    <h4>Qualification</h4>
+                    <p>
+                      Notre chargé de recrutement prend contact avec vous au
+                      créneau choisi. Il vous fait passer un entretien de
+                      qualification afin de vérifier vos connaissances et
+                      compétences.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="num-step">04</span>
+                  <div>
+                    <h4>Retour sur votre candidature</h4>
+                    <p>
+                      Si votre profil est validé, vous aurez accès à notre
+                      formation et pourrez désormais réaliser des missions en
+                      tant que spécialiste Trustoo.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sp-lr">
+              <img src="assets/img/c-4.jpeg" alt="" class="img-fluid w-100 radius-large" />
             </div>
           </div>
         </div>
