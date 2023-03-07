@@ -355,6 +355,17 @@
   .modal-content {
     padding: 2.4rem;
   }
+  .detail-cat-nav li a {
+    font-size: 1.3rem;
+    padding: 0.8rem 1rem;
+    margin: 0.3rem;
+  }
+  .tab-trigger-design .nav {
+    margin-bottom: 2rem;
+  }
+  .detail-lf {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 575px) {

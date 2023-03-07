@@ -224,7 +224,7 @@
                 role="tabpanel"
                 aria-labelledby="nav-home-tab"
               >
-                <div class="tb-content-wrapper">
+                <div class="tb-content-wrapper pt-4 pt-lg-5">
                   <div class="legend-blk position-relative">
                     <p class="legend-p position-absolute">Véhicule</p>
                     <div class="position-relative z-index-1">
@@ -1339,12 +1339,18 @@
 
     <!-- Plugin Activation  -->
     <script type="text/javascript">
-      const getHeaderHeight = document.querySelector("header").offsetHeight;
-      let detailsNav = new StickySidebar("#detailsNav", {
-        containerSelector: "#details-content-wrap",
-        innerWrapperSelector: ".detailsNav-inner",
-        topSpacing: getHeaderHeight + "px",
-        bottomSpacing: 20,
+      window.addEventListener("DOMContentLoaded", function () {
+        const getHeaderHeight = document.querySelector("header").offsetHeight;
+        let detailsNav = new StickySidebar("#detailsNav", {
+          containerSelector: "#details-content-wrap",
+          innerWrapperSelector: ".detailsNav-inner",
+          topSpacing: getHeaderHeight + "px",
+          bottomSpacing: 20,
+        });
+        window.addEventListener("resize", function () {
+          detailsNav.sidebarInner.style.width =
+            detailsNav.container.offsetWidth + "px";
+        });
       });
     </script>
 
