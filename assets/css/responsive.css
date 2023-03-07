@@ -166,6 +166,11 @@
     grid-gap: 2.4rem;
   }
 }
+@media screen and (max-width: 809px) {
+  .twocol-grid {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 767px) {
   .col-4 .btn.sm {
     min-width: auto;
@@ -311,6 +316,44 @@
   }
   .faq-content li::before {
     top: 1px;
+  }
+  .tab-trigger-design .nav button {
+    font-size: 2rem;
+  }
+  .legend-title {
+    font-size: 2.2rem;
+  }
+  .tbl-head {
+    display: none !important;
+  }
+  .tbl-rw {
+    display: block !important;
+  }
+  .tbl-td {
+    justify-content: flex-start;
+  }
+  .tbl-head .tbl-th:last-child,
+  .tbl-body .tbl-rw .tbl-td:last-child {
+    justify-content: flex-start;
+  }
+  .tbl-th,
+  .tbl-td {
+    padding: 10px 20px;
+    min-height: auto;
+  }
+  .legend-blk {
+    padding: 1.5rem;
+    padding-top: 3rem;
+  }
+  .rs-details-area {
+    padding-top: 11rem;
+    padding-bottom: 6rem;
+  }
+  .modal_close {
+    right: 2rem;
+  }
+  .modal-content {
+    padding: 2.4rem;
   }
 }
 

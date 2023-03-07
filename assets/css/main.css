@@ -1361,6 +1361,10 @@ a.faq-content li::before {
   left: 1rem;
   color: rgba(0, 0, 0, 0.38);
   z-index: 2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 .details-cat-title {
   font-size: 3rem;

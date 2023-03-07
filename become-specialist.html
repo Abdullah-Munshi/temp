@@ -26,6 +26,33 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
+    <!-- Modal Markup Start -->
+    <div class="modal fade" tabindex="-1" id="postuler">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <span class="modal_close position-absolute" data-bs-dismiss="modal"
+            ><img src="assets/img/times.svg" alt="" class="img-fluid"
+          /></span>
+          <form action="">
+            <div class="modal-content-wrap">
+              <h2>Postuler</h2>
+              <p>Pour postuler, rien de plus simple!</p>
+
+              <p>
+                Envoyez nous votre <strong>CV</strong> et une
+                <strong>lettre de motivation</strong> a l'adresse suivante:
+              </p>
+              <p>recrutement@trustoo.fr</p>
+              <p class="mb-0">
+                Merci de preciser intitule du poste dans object de votre mail.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Markup end -->
+
     <!-- This div responsible for header sticky position detection -->
     <div class="sticky-target"></div>
     <header
@@ -199,7 +226,12 @@
                 <li>Sens du service</li>
                 <li>Expérience en réparation et maintenance</li>
               </ul>
-              <a href="#" class="btn bg_primary"
+              <a
+                href="#"
+                class="btn bg_primary"
+                data-bs-toggle="modal"
+                data-bs-target="#postuler"
+                role="button"
                 >Postuler<svg
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
