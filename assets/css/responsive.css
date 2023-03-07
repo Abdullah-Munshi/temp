@@ -26,8 +26,8 @@
     min-height: 40rem;
     padding: 3rem 3rem;
   }
-  .logo {
-    max-width: 140px;
+  .logo svg {
+    width: 140px;
     max-height: 35px;
   }
   .section {
@@ -364,6 +364,15 @@
     margin-bottom: 2rem;
   }
   .detail-lf {
+    margin-bottom: 1rem;
+  }
+  .logo svg {
+    width: 116px;
+    height: 30px;
+  }
+  .para-blk-2nd-title,
+  .para-blk-3rd-title {
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 }
