@@ -1339,6 +1339,8 @@ a.faq-content li::before {
 .detail-cat-nav {
   background-color: var(--white);
   padding: 1rem 0;
+  margin-top: -1.5rem;
+  padding-top: 2.5rem;
 }
 
 .twocol-grid {
