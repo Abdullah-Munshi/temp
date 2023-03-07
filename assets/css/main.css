@@ -1165,6 +1165,7 @@ a.faq-content li::before {
 .rs-details-area {
   padding-top: 14rem;
   padding-bottom: 8rem;
+  font-family: var(--font_roboto);
 }
 .grid-table .tbl-head,
 .grid-table .tbl-rw {
@@ -1324,7 +1325,6 @@ a.faq-content li::before {
 .download-btn:hover {
   color: var(--white);
 }
-
 .detail-cat-nav li a {
   text-decoration: none;
   font-size: 1.6rem;
@@ -1333,6 +1333,8 @@ a.faq-content li::before {
   padding: 1rem 1.5rem;
   border-radius: 5rem;
   margin: 0.5rem;
+  display: inline-block;
+  line-height: 1;
 }
 .detail-cat-nav {
   background-color: var(--white);
@@ -1358,6 +1360,7 @@ a.faq-content li::before {
   padding: 0 0.5rem;
   left: 1rem;
   color: rgba(0, 0, 0, 0.38);
+  z-index: 2;
 }
 .details-cat-title {
   font-size: 3rem;
@@ -1372,6 +1375,7 @@ a.faq-content li::before {
 .detail-lf {
   position: relative;
   z-index: 50;
+  margin-bottom: 3rem;
 }
 .tertiary-pole-title h5 {
   color: var(--tertiaryColor);
@@ -1410,11 +1414,63 @@ a.faq-content li::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2.4rem;
 }
 .unlock-input .form-control {
   width: 5rem;
   height: 4.5rem;
   border-radius: 0.5rem;
   margin: 0 0.5rem;
+  text-align: center;
+}
+[data-blur="true"]::after {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  content: "";
+  position: absolute;
+  background-color: var(--white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  filter: blur(5px);
+  z-index: 0;
+}
+.show-cell {
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: transparent;
+  color: var(--primaryColor);
+  font-weight: 600;
+  font-size: 1.3rem;
+  border: 0;
+}
+.detail-rg .details-cat:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.info-group .input-box {
+  margin-top: 2rem;
+}
+.badge.bg_primary {
+  background-color: var(--primaryColor);
+}
+.mb-20 {
+  margin-bottom: 2rem;
+}
+.modal-content-wrap h2 {
+  color: var(--secondaryColor);
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.modal_close {
+  width: 3rem;
+  height: 3rem;
+  right: -3rem;
+  top: -4rem;
+  z-index: 1;
+  cursor: pointer;
 }
 /* resume-details page css end */

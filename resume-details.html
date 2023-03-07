@@ -35,6 +35,9 @@
     <div class="modal fade" tabindex="-1" id="unlockModal">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
+          <span class="modal_close position-absolute" data-bs-dismiss="modal"
+            ><img src="assets/img/times.svg" alt="" class="img-fluid"
+          /></span>
           <form action="">
             <div class="modal-content-wrap">
               <h2>Unloack Access</h2>
@@ -443,11 +446,17 @@
                               <label for="" class="position-absolute"
                                 >Pays vendeur
                               </label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="France"
-                              />
+                              <div data-blur="true">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="France"
+                                />
+
+                                <button class="show-cell position-absolute">
+                                  show
+                                </button>
+                              </div>
                             </div>
                             <div class="input-box position-relative">
                               <label for="" class="position-absolute"
@@ -480,12 +489,14 @@
                           </p>
                           <div class="twocol-grid position-relative z-index-1">
                             <div>
-                              <div class="info-group">
+                              <div class="info-group mb-5">
                                 <div
                                   class="tertiary-pole-title d-flex justify-content-between align-items-center"
                                 >
                                   <h5>Certificat d'immatriculation présenté</h5>
-                                  <span class="badge type-1">Présentée</span>
+                                  <span class="badge type-1 bg_primary"
+                                    >Présentée</span
+                                  >
                                 </div>
                                 <div class="input-box position-relative">
                                   <label for="" class="position-absolute"
@@ -505,19 +516,63 @@
                                   <input
                                     type="text"
                                     class="form-control"
-                                    value="France"
+                                    value="FE-780-BS"
+                                  />
+                                </div>
+                              </div>
+                              <div class="info-group">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>
+                                    Correspondance du numéro d'immatriculation
+                                    (certificat d'immatriculation/véhicule)
+                                  </h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Oui</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date de première immatriculation (B)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="25/02/2019"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date du certificat d'immatriculation actuel
+                                    (I)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="02/06/2021"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Nom du propriétaire (C.1)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="LAURENT SCHMIDT"
                                   />
                                 </div>
                               </div>
                             </div>
                             <div>
                               <div
-                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
                               >
                                 <h5>Photo du certificat d'immatriculation</h5>
                               </div>
 
-                              <div class="photo-blk position-relative">
+                              <div class="photo-blk position-relative mb-20">
                                 <img
                                   src="assets/img/upload-1.jpeg"
                                   alt=""
@@ -531,6 +586,678 @@
                                 >
                                   Unlock<img src="assets/img/lock.svg" alt="" />
                                 </button>
+                              </div>
+                              <div class="input-box position-relative mb-20">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                              <div class="input-box position-relative">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="details-cat" id="det-3">
+                        <h3 class="details-cat-title">Extérieur</h3>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Certificat d'immatriculation
+                          </p>
+                          <div class="twocol-grid position-relative z-index-1">
+                            <div>
+                              <div class="info-group mb-5">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>Certificat d'immatriculation présenté</h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Présentée</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Pays du certificat d'immatriculation
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="France"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Numéro d'immatriculation sur le certificat
+                                    d'immatriculation (A)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="FE-780-BS"
+                                  />
+                                </div>
+                              </div>
+                              <div class="info-group">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>
+                                    Correspondance du numéro d'immatriculation
+                                    (certificat d'immatriculation/véhicule)
+                                  </h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Oui</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date de première immatriculation (B)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="25/02/2019"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date du certificat d'immatriculation actuel
+                                    (I)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="02/06/2021"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Nom du propriétaire (C.1)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="LAURENT SCHMIDT"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                              >
+                                <h5>Photo du certificat d'immatriculation</h5>
+                              </div>
+
+                              <div class="photo-blk position-relative mb-20">
+                                <img
+                                  src="assets/img/upload-1.jpeg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+
+                                <button
+                                  class="unlock position-absolute z-index-1"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unlockModal"
+                                >
+                                  Unlock<img src="assets/img/lock.svg" alt="" />
+                                </button>
+                              </div>
+                              <div class="input-box position-relative mb-20">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                              <div class="input-box position-relative">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="details-cat" id="det-4">
+                        <h3 class="details-cat-title">
+                          Systèmes & équipements
+                        </h3>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Certificat d'immatriculation
+                          </p>
+                          <div class="twocol-grid position-relative z-index-1">
+                            <div>
+                              <div class="info-group mb-5">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>Certificat d'immatriculation présenté</h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Présentée</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Pays du certificat d'immatriculation
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="France"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Numéro d'immatriculation sur le certificat
+                                    d'immatriculation (A)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="FE-780-BS"
+                                  />
+                                </div>
+                              </div>
+                              <div class="info-group">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>
+                                    Correspondance du numéro d'immatriculation
+                                    (certificat d'immatriculation/véhicule)
+                                  </h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Oui</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date de première immatriculation (B)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="25/02/2019"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date du certificat d'immatriculation actuel
+                                    (I)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="02/06/2021"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Nom du propriétaire (C.1)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="LAURENT SCHMIDT"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                              >
+                                <h5>Photo du certificat d'immatriculation</h5>
+                              </div>
+
+                              <div class="photo-blk position-relative mb-20">
+                                <img
+                                  src="assets/img/upload-1.jpeg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+
+                                <button
+                                  class="unlock position-absolute z-index-1"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unlockModal"
+                                >
+                                  Unlock<img src="assets/img/lock.svg" alt="" />
+                                </button>
+                              </div>
+                              <div class="input-box position-relative mb-20">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                              <div class="input-box position-relative">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="details-cat" id="det-5">
+                        <h3 class="details-cat-title">Intérieur</h3>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Certificat d'immatriculation
+                          </p>
+                          <div class="twocol-grid position-relative z-index-1">
+                            <div>
+                              <div class="info-group mb-5">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>Certificat d'immatriculation présenté</h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Présentée</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Pays du certificat d'immatriculation
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="France"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Numéro d'immatriculation sur le certificat
+                                    d'immatriculation (A)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="FE-780-BS"
+                                  />
+                                </div>
+                              </div>
+                              <div class="info-group">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>
+                                    Correspondance du numéro d'immatriculation
+                                    (certificat d'immatriculation/véhicule)
+                                  </h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Oui</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date de première immatriculation (B)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="25/02/2019"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date du certificat d'immatriculation actuel
+                                    (I)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="02/06/2021"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Nom du propriétaire (C.1)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="LAURENT SCHMIDT"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                              >
+                                <h5>Photo du certificat d'immatriculation</h5>
+                              </div>
+
+                              <div class="photo-blk position-relative mb-20">
+                                <img
+                                  src="assets/img/upload-1.jpeg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+
+                                <button
+                                  class="unlock position-absolute z-index-1"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unlockModal"
+                                >
+                                  Unlock<img src="assets/img/lock.svg" alt="" />
+                                </button>
+                              </div>
+                              <div class="input-box position-relative mb-20">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                              <div class="input-box position-relative">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="details-cat" id="det-6">
+                        <h3 class="details-cat-title">Test du véhicule</h3>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Certificat d'immatriculation
+                          </p>
+                          <div class="twocol-grid position-relative z-index-1">
+                            <div>
+                              <div class="info-group mb-5">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>Certificat d'immatriculation présenté</h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Présentée</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Pays du certificat d'immatriculation
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="France"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Numéro d'immatriculation sur le certificat
+                                    d'immatriculation (A)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="FE-780-BS"
+                                  />
+                                </div>
+                              </div>
+                              <div class="info-group">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>
+                                    Correspondance du numéro d'immatriculation
+                                    (certificat d'immatriculation/véhicule)
+                                  </h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Oui</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date de première immatriculation (B)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="25/02/2019"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date du certificat d'immatriculation actuel
+                                    (I)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="02/06/2021"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Nom du propriétaire (C.1)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="LAURENT SCHMIDT"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                              >
+                                <h5>Photo du certificat d'immatriculation</h5>
+                              </div>
+
+                              <div class="photo-blk position-relative mb-20">
+                                <img
+                                  src="assets/img/upload-1.jpeg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+
+                                <button
+                                  class="unlock position-absolute z-index-1"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unlockModal"
+                                >
+                                  Unlock<img src="assets/img/lock.svg" alt="" />
+                                </button>
+                              </div>
+                              <div class="input-box position-relative mb-20">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                              <div class="input-box position-relative">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="details-cat" id="det-7">
+                        <h3 class="details-cat-title">Conclusion</h3>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Certificat d'immatriculation
+                          </p>
+                          <div class="twocol-grid position-relative z-index-1">
+                            <div>
+                              <div class="info-group mb-5">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>Certificat d'immatriculation présenté</h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Présentée</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Pays du certificat d'immatriculation
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="France"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Numéro d'immatriculation sur le certificat
+                                    d'immatriculation (A)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="FE-780-BS"
+                                  />
+                                </div>
+                              </div>
+                              <div class="info-group">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>
+                                    Correspondance du numéro d'immatriculation
+                                    (certificat d'immatriculation/véhicule)
+                                  </h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Oui</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date de première immatriculation (B)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="25/02/2019"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Date du certificat d'immatriculation actuel
+                                    (I)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="02/06/2021"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Nom du propriétaire (C.1)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="LAURENT SCHMIDT"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                              >
+                                <h5>Photo du certificat d'immatriculation</h5>
+                              </div>
+
+                              <div class="photo-blk position-relative mb-20">
+                                <img
+                                  src="assets/img/upload-1.jpeg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+
+                                <button
+                                  class="unlock position-absolute z-index-1"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unlockModal"
+                                >
+                                  Unlock<img src="assets/img/lock.svg" alt="" />
+                                </button>
+                              </div>
+                              <div class="input-box position-relative mb-20">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
+                              </div>
+                              <div class="input-box position-relative">
+                                <label for="" class="position-absolute"
+                                  >Date de première immatriculation (B)
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="25/02/2019"
+                                />
                               </div>
                             </div>
                           </div>
@@ -607,12 +1334,16 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Plugin Js  -->
     <script src="assets/js/sticky-sidebar.min.js"></script>
+
+    <!-- Plugin Activation  -->
     <script type="text/javascript">
+      const getHeaderHeight = document.querySelector("header").offsetHeight;
       let detailsNav = new StickySidebar("#detailsNav", {
         containerSelector: "#details-content-wrap",
         innerWrapperSelector: ".detailsNav-inner",
-        topSpacing: 80,
+        topSpacing: getHeaderHeight + "px",
         bottomSpacing: 20,
       });
     </script>
