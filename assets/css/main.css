@@ -57,6 +57,12 @@ ol {
 .radius-large {
   border-radius: 2.4rem;
 }
+.radius-30 {
+  border-radius: 3rem !important;
+}
+.font_w_semibold {
+  font-weight: 600;
+}
 /* utility css end */
 
 /* header css start */
@@ -1417,11 +1423,13 @@ a.faq-content li::before {
   margin-top: -1.5rem;
   padding-top: 2.5rem;
 }
-
 .twocol-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 2.4rem;
+}
+.twocol-grid.row.gx-5 {
+  --bs-gutter-x: 2.4rem;
 }
 .input-box input {
   height: auto;
@@ -1506,11 +1514,12 @@ a.faq-content li::before {
   text-align: center;
 }
 [data-blur="true"] .form-control,
-[data-blur="true"] .input {
+[data-blur="true"] input {
   color: transparent;
   text-shadow: 0 0 4px #000000ba;
+  pointer-events: none;
 }
-[data-blur="true"] .unlock {
+[data-blur] .unlock {
   right: 1rem;
   left: auto;
   transform: translateY(-50%);
@@ -1526,6 +1535,9 @@ a.faq-content li::before {
 }
 .badge.bg_primary {
   background-color: var(--primaryColor);
+}
+.badge.bg_tertiary {
+  background-color: var(--tertiaryColor);
 }
 .mb-20 {
   margin-bottom: 2rem;
@@ -1555,5 +1567,24 @@ a.faq-content li::before {
 }
 .badge.bg_secondary {
   background-color: var(--secondaryColor);
+}
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: transparent;
+  opacity: unset;
+}
+.last-child-margin-bottom-0 .vehicle_single.mb-5:last-child {
+  margin-bottom: 0 !important;
+}
+.photo-wrap-type-0 {
+  background-color: rgba(240, 0, 0, 0.25);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+.photo-wrap-type-0 .photo-blk:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
+.photo-blk img {
+  border-radius: 0.5rem;
 }
 /* resume-details page css end */

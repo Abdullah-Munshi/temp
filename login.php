@@ -31,6 +31,32 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
+
+  <?php
+    // Define variable and set to empty values
+    $formIsValid = true;
+    $email = $password = "";
+    
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+      $email = test_input($_POST['email']);
+      $password = test_input($_POST['password']);
+
+      // check the user inputs 
+      if($email == 'stackbind@gmail.com') {
+        $formIsValid = true;
+      } else {
+        $formIsValid = false;
+      } 
+    }
+
+    function test_input($data) {
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+      return $data;
+    }
+  ?>
+
     <header class="header-area type-2 bg-white d-flex align-items-center">
       <div class="container-fluid px-4 px-lg-5">
         <div class="row align-items-center">
@@ -97,12 +123,8 @@
       <div
         class="access-page f_montserrat d-flex align-items-center position-relative overflow-hidden"
       >
-        <div
-          class="fm-alert position-absolute w-100 top-0 start-0 text-center alert alert-danger"
-          role="alert"
-        >
-          Oups ! Il y a des erreurs à corriger.
-        </div>
+      <div class="fm-alert position-absolute w-100 top-0 start-0 text-center alert alert-danger <?php echo !$formIsValid ?  'show':  ''?>"
+              role="alert">Oups ! Il y a des erreurs à corriger.</div>
         <div class="mx-width mx-auto position-relative z-index-1">
           <div class="access-title text-center">
             <p class="mb-0">Mon compte</p>
@@ -111,34 +133,35 @@
             <h4>Renseignez vos identifiants</h4>
           </div>
 
-          <form class="access-fm login-form" id="loginFm">
+          <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" class="access-fm login-form" id="loginFm">
             <div class="has-validation">
               <div class="invalid-feedback">Please choose a username.</div>
             </div>
 
             <div class="input-inside">
               <input
-                type="text"
+                type="email"
                 id="email"
+                name="email"
                 class="form-control"
-                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                autocomplete="off"
                 placeholder="Adresse Email"
                 required
               />
             </div>
             <div class="input-inside">
               <input
-                type="text"
+                type="password"
                 id="password"
+                name="password"
                 class="form-control"
                 placeholder="Mot de passe"
                 required
               />
-              <p class="error-p mt-2 mb-0">
+              <p class="error-p mt-2 mb-0 <?php echo !$formIsValid ?  'show':  ''?>">
                 Identifiant ou mot de passe invalide.
               </p>
             </div>
-
             <div class="access-btns">
               <a href="#" class="btn border-style text-uppercase"
                 >Mot de passe oublié ?</a
@@ -147,7 +170,6 @@
                 Connexion
               </button>
             </div>
-
             <div class="ut-contents text-center">
               <p>
                 <strong>
@@ -170,7 +192,6 @@
         </div>
       </div>
     </main>
-
     <!-- Bootstrap Js and popper js (for dropdown and modals) -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -182,24 +203,5 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        // Script for Login form validation/basic validation
-        const loginForm = document.getElementById("loginFm");
-        const email = document.getElementById("email");
-        const password = document.getElementById("password");
-        loginForm.addEventListener("submit", function (event) {
-          event.preventDefault();
-          if (
-            email.value != "stackbind@gmail.com" &&
-            password.value != "123456"
-          ) {
-            document.querySelector(".fm-alert").classList.add("show");
-            document.querySelector(".error-p").classList.add("show");
-          }
-        });
-      });
-    </script>
   </body>
 </html>

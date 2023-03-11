@@ -280,7 +280,7 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade"
                 id="nav-home"
                 role="tabpanel"
                 aria-labelledby="nav-home-tab"
@@ -474,7 +474,7 @@
                 </div>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show active"
                 id="nav-profile"
                 role="tabpanel"
                 aria-labelledby="nav-profile-tab"
@@ -519,6 +519,7 @@
                                   type="text"
                                   class="form-control"
                                   value="France"
+                                  disabled
                                 />
 
                                 <button
@@ -689,8 +690,12 @@
                           <p class="legend-p position-absolute">
                             Photos de l'extérieur
                           </p>
-                          <div class="twocol-grid position-relative z-index-1">
-                            <div>
+
+                          <div
+                            class="twocol-grid row gx-5 z-index-1"
+                            data-masonry='{"percentPosition": true }'
+                          >
+                            <div class="col-md-6 mb-5">
                               <div
                                 class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
                               >
@@ -698,7 +703,7 @@
                                   Photo du certificat d'immatriculation
                                 </h5>
                               </div>
-                              <div class="photo-blk position-relative mb-20">
+                              <div class="photo-blk position-relative">
                                 <img
                                   src="assets/img/car-1.jpeg"
                                   alt=""
@@ -714,7 +719,7 @@
                                 </button>
                               </div>
                             </div>
-                            <div>
+                            <div class="col-md-6 mb-5">
                               <div
                                 class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
                               >
@@ -722,7 +727,7 @@
                                   Photo du certificat d'immatriculation
                                 </h5>
                               </div>
-                              <div class="photo-blk position-relative mb-20">
+                              <div class="photo-blk position-relative">
                                 <img
                                   src="assets/img/car-1.jpeg"
                                   alt=""
@@ -738,7 +743,7 @@
                                 </button>
                               </div>
                             </div>
-                            <div>
+                            <div class="col-md-6 mb-5">
                               <div
                                 class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
                               >
@@ -746,7 +751,7 @@
                                   Photo du certificat d'immatriculation
                                 </h5>
                               </div>
-                              <div class="photo-blk position-relative mb-20">
+                              <div class="photo-blk position-relative">
                                 <img
                                   src="assets/img/car-1.jpeg"
                                   alt=""
@@ -762,7 +767,7 @@
                                 </button>
                               </div>
                             </div>
-                            <div>
+                            <div class="col-md-6 mb-5">
                               <div
                                 class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
                               >
@@ -770,9 +775,9 @@
                                   Photo du certificat d'immatriculation
                                 </h5>
                               </div>
-                              <div class="photo-blk position-relative mb-20">
+                              <div class="photo-blk position-relative">
                                 <img
-                                  src="assets/img/car-1.jpeg"
+                                  src="assets/img/car-2.jpeg"
                                   alt=""
                                   class="img-fluid"
                                 />
@@ -794,95 +799,106 @@
                           Systèmes & équipements
                         </h3>
                         <div class="legend-blk position-relative">
-                          <p class="legend-p position-absolute">
-                            Certificat d'immatriculation
-                          </p>
+                          <p class="legend-p position-absolute">Moteur</p>
+                          <div
+                            class="twocol-grid position-relative z-index-1 mb-5"
+                          >
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Niveau d'huile</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Bon</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Qualité de l'huile</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Bon</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Niveau du liquide de refroidissement</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Bon</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Bon</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Sans défauts</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>État général des durites et flexibles</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Bon</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Type de distribution</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Chaîne</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>État de la courroie d'accessoire</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Bon</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Tension de la courroie d'accessoire</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Bon</span
+                                >
+                              </div>
+                            </div>
+                          </div>
                           <div class="twocol-grid position-relative z-index-1">
                             <div>
-                              <div class="info-group mb-5">
-                                <div
-                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
-                                >
-                                  <h5>Certificat d'immatriculation présenté</h5>
-                                  <span class="badge type-1 bg_primary"
-                                    >Présentée</span
-                                  >
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Pays du certificat d'immatriculation
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="France"
-                                  />
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Numéro d'immatriculation sur le certificat
-                                    d'immatriculation (A)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="FE-780-BS"
-                                  />
-                                </div>
-                              </div>
-                              <div class="info-group">
-                                <div
-                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
-                                >
-                                  <h5>
-                                    Correspondance du numéro d'immatriculation
-                                    (certificat d'immatriculation/véhicule)
-                                  </h5>
-                                  <span class="badge type-1 bg_primary"
-                                    >Oui</span
-                                  >
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Date de première immatriculation (B)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="25/02/2019"
-                                  />
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Date du certificat d'immatriculation actuel
-                                    (I)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="02/06/2021"
-                                  />
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Nom du propriétaire (C.1)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="LAURENT SCHMIDT"
-                                  />
-                                </div>
+                              <div class="input-box position-relative">
+                                <label for="" class="position-absolute"
+                                  >Commentaires sur le moteur
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="Compartiment moteur propre"
+                                />
                               </div>
                             </div>
                             <div>
-                              <div
-                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
-                              >
-                                <h5>Photo du certificat d'immatriculation</h5>
-                              </div>
-
-                              <div class="photo-blk position-relative mb-20">
+                              <div class="photo-blk position-relative">
                                 <img
                                   src="assets/img/upload-1.jpeg"
                                   alt=""
@@ -897,25 +913,302 @@
                                   Unlock<img src="assets/img/lock.svg" alt="" />
                                 </button>
                               </div>
-                              <div class="input-box position-relative mb-20">
-                                <label for="" class="position-absolute"
-                                  >Date de première immatriculation (B)
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="25/02/2019"
-                                />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">Phares avant</p>
+                          <div
+                            class="twocol-grid position-relative z-index-1 mb-5"
+                          >
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Feux de position avant</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
                               </div>
-                              <div class="input-box position-relative">
-                                <label for="" class="position-absolute"
-                                  >Date de première immatriculation (B)
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="25/02/2019"
-                                />
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Feux de croisement</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Phares avant</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Clignotants avant</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Antibrouillards avant</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Phares arrière
+                          </p>
+                          <div
+                            class="twocol-grid position-relative z-index-1 mb-5"
+                          >
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Feux de position arrière</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Feux de stop</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Feux de recul</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Clignotants arrière</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Antibrouillards arrière</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Éclairage de plaque d'immatriculation</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Équipement intérieur
+                          </p>
+                          <div
+                            class="twocol-grid position-relative z-index-1 mb-5"
+                          >
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Sellerie</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Cuir</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Écran multimédia</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Écran tactile</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Vitres électriques équipées</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Toutes vitres électriques</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Vitres électriques fonctionnelles</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Oui</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Rétroviseurs rabattables électriques</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Autoradio</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Connexion Bluetooth</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>GPS</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Fermeture centralisée</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Toit vitré</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Oui</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Toit ouvrant</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Autres équipements
+                          </p>
+                          <div
+                            class="twocol-grid position-relative z-index-1 mb-5"
+                          >
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Ouverture sans clef</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Roue de secours</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Oui</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Type de roue de secours</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Galette</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Cric</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Oui</span
+                                >
                               </div>
                             </div>
                           </div>
@@ -925,10 +1218,14 @@
                         <h3 class="details-cat-title">Intérieur</h3>
                         <div class="legend-blk position-relative">
                           <p class="legend-p position-absolute">
-                            Photos de l'extérieur
+                            Photos de l'intérieur du véhicule
                           </p>
-                          <div class="twocol-grid position-relative z-index-1">
-                            <div>
+
+                          <div
+                            class="twocol-grid row gx-5 z-index-1"
+                            data-masonry='{"percentPosition": true }'
+                          >
+                            <div class="col-xl-6 mb-5">
                               <div
                                 class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
                               >
@@ -936,7 +1233,7 @@
                                   Photo du certificat d'immatriculation
                                 </h5>
                               </div>
-                              <div class="photo-blk position-relative mb-20">
+                              <div class="photo-blk position-relative">
                                 <img
                                   src="assets/img/car-1.jpeg"
                                   alt=""
@@ -952,7 +1249,7 @@
                                 </button>
                               </div>
                             </div>
-                            <div>
+                            <div class="col-xl-6 mb-5">
                               <div
                                 class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
                               >
@@ -960,7 +1257,7 @@
                                   Photo du certificat d'immatriculation
                                 </h5>
                               </div>
-                              <div class="photo-blk position-relative mb-20">
+                              <div class="photo-blk position-relative">
                                 <img
                                   src="assets/img/car-1.jpeg"
                                   alt=""
@@ -976,7 +1273,7 @@
                                 </button>
                               </div>
                             </div>
-                            <div>
+                            <div class="col-xl-6 mb-5">
                               <div
                                 class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
                               >
@@ -984,7 +1281,7 @@
                                   Photo du certificat d'immatriculation
                                 </h5>
                               </div>
-                              <div class="photo-blk position-relative mb-20">
+                              <div class="photo-blk position-relative">
                                 <img
                                   src="assets/img/car-1.jpeg"
                                   alt=""
@@ -1000,7 +1297,7 @@
                                 </button>
                               </div>
                             </div>
-                            <div>
+                            <div class="col-xl-6 mb-5">
                               <div
                                 class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
                               >
@@ -1008,7 +1305,127 @@
                                   Photo du certificat d'immatriculation
                                 </h5>
                               </div>
-                              <div class="photo-blk position-relative mb-20">
+                              <div class="photo-blk position-relative">
+                                <img
+                                  src="assets/img/car-2.jpeg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+
+                                <button
+                                  class="unlock position-absolute z-index-1"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unlockModal"
+                                >
+                                  Unlock<img src="assets/img/lock.svg" alt="" />
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-xl-6 mb-5">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                              >
+                                <h5 class="mark-line">
+                                  Photo du certificat d'immatriculation
+                                </h5>
+                              </div>
+                              <div class="photo-blk position-relative">
+                                <img
+                                  src="assets/img/car-1.jpeg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+
+                                <button
+                                  class="unlock position-absolute z-index-1"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unlockModal"
+                                >
+                                  Unlock<img src="assets/img/lock.svg" alt="" />
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-xl-6 mb-5">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                              >
+                                <h5 class="mark-line">
+                                  Photo du certificat d'immatriculation
+                                </h5>
+                              </div>
+                              <div class="photo-blk position-relative">
+                                <img
+                                  src="assets/img/car-1.jpeg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+
+                                <button
+                                  class="unlock position-absolute z-index-1"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unlockModal"
+                                >
+                                  Unlock<img src="assets/img/lock.svg" alt="" />
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-xl-6 mb-5">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                              >
+                                <h5 class="mark-line">
+                                  Photo du certificat d'immatriculation
+                                </h5>
+                              </div>
+                              <div class="photo-blk position-relative">
+                                <img
+                                  src="assets/img/car-2.jpeg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+
+                                <button
+                                  class="unlock position-absolute z-index-1"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unlockModal"
+                                >
+                                  Unlock<img src="assets/img/lock.svg" alt="" />
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-xl-6 mb-5">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                              >
+                                <h5 class="mark-line">
+                                  Photo du certificat d'immatriculation
+                                </h5>
+                              </div>
+                              <div class="photo-blk position-relative">
+                                <img
+                                  src="assets/img/car-1.jpeg"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+
+                                <button
+                                  class="unlock position-absolute z-index-1"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unlockModal"
+                                >
+                                  Unlock<img src="assets/img/lock.svg" alt="" />
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-xl-6 mb-5">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                              >
+                                <h5 class="mark-line">
+                                  Photo du certificat d'immatriculation
+                                </h5>
+                              </div>
+                              <div class="photo-blk position-relative">
                                 <img
                                   src="assets/img/car-1.jpeg"
                                   alt=""
@@ -1056,6 +1473,16 @@
                                 <div
                                   class="tertiary-pole-title d-flex justify-content-between align-items-center"
                                 >
+                                  <h5>État des sièges avant</h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Sans défauts</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="info-group mb-5">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
                                   <h5>Ceintures avant fonctionnelles</h5>
                                   <span class="badge type-1 bg_secondary"
                                     >Oui</span
@@ -1064,34 +1491,198 @@
                               </div>
                               <div class="info-group mb-5">
                                 <div
-                                  class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
                                 >
-                                  <h5>Ceintures avant fonctionnelles</h5>
-                                  <span class="badge type-1 bg_secondary"
-                                    >Oui</span
+                                  <h5>État des tapis avant</h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Sans défauts</span
                                   >
                                 </div>
-                                <div class="photo-blk position-relative">
-                                  <img
-                                    src="assets/img/car-1.jpeg"
-                                    alt=""
-                                    class="img-fluid"
-                                  />
-
-                                  <button
-                                    class="unlock position-absolute z-index-1"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#unlockModal"
+                              </div>
+                              <div class="info-group mb-5">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>État des panneaux de porte avant</h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Sans défauts</span
                                   >
-                                    Unlock<img
-                                      src="assets/img/lock.svg"
-                                      alt=""
-                                    />
-                                  </button>
                                 </div>
                               </div>
                             </div>
-                            <div>content if otherwise delete this div</div>
+                            <div>
+                              <div class="info-group mb-5">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
+                                >
+                                  <h5>État du tableau de bord</h5>
+                                  <span class="badge type-1"
+                                    >Défaut(s) apparent(s)</span
+                                  >
+                                </div>
+                                <div class="photo-wrap-type-0">
+                                  <div class="photo-blk position-relative">
+                                    <img
+                                      src="assets/img/car-1.jpeg"
+                                      alt=""
+                                      class="img-fluid"
+                                    />
+
+                                    <button
+                                      class="unlock position-absolute z-index-1"
+                                      data-bs-toggle="modal"
+                                      data-bs-target="#unlockModal"
+                                    >
+                                      Unlock<img
+                                        src="assets/img/lock.svg"
+                                        alt=""
+                                      />
+                                    </button>
+                                  </div>
+                                  <div class="photo-blk-with-bottom-text">
+                                    <div class="photo-blk position-relative">
+                                      <img
+                                        src="assets/img/car-1.jpeg"
+                                        alt=""
+                                        class="img-fluid"
+                                      />
+
+                                      <button
+                                        class="unlock position-absolute z-index-1"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#unlockModal"
+                                      >
+                                        Unlock<img
+                                          src="assets/img/lock.svg"
+                                          alt=""
+                                        />
+                                      </button>
+                                    </div>
+                                    <p class="mb-0 font_w_semibold">
+                                      <span class="badge type-1 radius-30 me-2"
+                                        >À remplacer</span
+                                      >Bouton lève vitre AVG
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Intérieur arrière
+                          </p>
+                          <div class="twocol-grid position-relative z-index-1">
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>État des sièges arrière</h5>
+                                <span class="badge type-1 bg_primary"
+                                  >Sans défauts</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Ceintures arrière fonctionnelles</h5>
+                                <span class="badge type-1 bg_secondary"
+                                  >Oui</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>État des tapis arrière</h5>
+                                <span class="badge type-1 bg_primary"
+                                  >Sans défauts</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>État des panneaux de porte arrière</h5>
+                                <span class="badge type-1 bg_primary"
+                                  >Sans défauts</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>État du ciel de toit</h5>
+                                <span class="badge type-1 bg_primary"
+                                  >Sans défauts</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Intérieur du coffre
+                          </p>
+                          <div class="twocol-grid position-relative z-index-1">
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>État de la plage arrière</h5>
+                                <span class="badge type-1 bg_primary"
+                                  >Sans défauts</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>État du coffre</h5>
+                                <span class="badge type-1 bg_primary"
+                                  >Sans défauts</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Commentaires sur l'intérieur
+                          </p>
+                          <div class="twocol-grid position-relative z-index-1">
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>
+                                  Cohérence du kilométrage avec l'intérieur du
+                                  véhicule
+                                </h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Oui</span
+                                >
+                              </div>
+                            </div>
+                            <div>
+                              <div class="input-box position-relative">
+                                <label for="" class="position-absolute"
+                                  >Commentaires sur l'intérieur
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="Intérieur très propre"
+                                />
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1099,126 +1690,172 @@
                         <h3 class="details-cat-title">Test du véhicule</h3>
                         <div class="legend-blk position-relative">
                           <p class="legend-p position-absolute">
-                            Certificat d'immatriculation
+                            Test en stationnement
+                          </p>
+                          <div class="twocol-grid position-relative z-index-1">
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Compteur</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Aucun témoin d'alarme</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Démarrage</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Bon démarrage</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Test sonore en stationnement</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Pas de bruits anormaux</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Climatisation</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Test de conduite
+                          </p>
+                          <div class="twocol-grid position-relative z-index-1">
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Essai routier possible ?</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Oui</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Régulateur/limiteur de vitesse</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Radar de recul</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Présent(e) et fonctionnel(le)</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Usure de l'embrayage</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Non vérifiable</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Passage de vitesses</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Passage de vitesses normal</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Accélération</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Accélération normale</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Freinage</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Freinage normal</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Amortissement du véhicule</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Amortissement normal</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Vibrations anormales sur route</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Pas de vibration anormale</span
+                                >
+                              </div>
+                            </div>
+                            <div class="info-group">
+                              <div
+                                class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                              >
+                                <h5>Bruits sur route</h5>
+                                <span class="badge type-1 bg_tertiary"
+                                  >Pas de bruits anormaux</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="legend-blk position-relative">
+                          <p class="legend-p position-absolute">
+                            Commentaires sur le test du véhicule
                           </p>
                           <div class="twocol-grid position-relative z-index-1">
                             <div>
-                              <div class="info-group mb-5">
-                                <div
-                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
-                                >
-                                  <h5>Certificat d'immatriculation présenté</h5>
-                                  <span class="badge type-1 bg_primary"
-                                    >Présentée</span
-                                  >
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Pays du certificat d'immatriculation
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="France"
-                                  />
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Numéro d'immatriculation sur le certificat
-                                    d'immatriculation (A)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="FE-780-BS"
-                                  />
-                                </div>
-                              </div>
-                              <div class="info-group">
-                                <div
-                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
-                                >
-                                  <h5>
-                                    Correspondance du numéro d'immatriculation
-                                    (certificat d'immatriculation/véhicule)
-                                  </h5>
-                                  <span class="badge type-1 bg_primary"
-                                    >Oui</span
-                                  >
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Date de première immatriculation (B)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="25/02/2019"
-                                  />
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Date du certificat d'immatriculation actuel
-                                    (I)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="02/06/2021"
-                                  />
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Nom du propriétaire (C.1)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="LAURENT SCHMIDT"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <div
-                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
-                              >
-                                <h5>Photo du certificat d'immatriculation</h5>
-                              </div>
-
-                              <div class="photo-blk position-relative mb-20">
-                                <img
-                                  src="assets/img/upload-1.jpeg"
-                                  alt=""
-                                  class="img-fluid"
-                                />
-
-                                <button
-                                  class="unlock position-absolute z-index-1"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#unlockModal"
-                                >
-                                  Unlock<img src="assets/img/lock.svg" alt="" />
-                                </button>
-                              </div>
-                              <div class="input-box position-relative mb-20">
-                                <label for="" class="position-absolute"
-                                  >Date de première immatriculation (B)
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="25/02/2019"
-                                />
-                              </div>
                               <div class="input-box position-relative">
                                 <label for="" class="position-absolute"
-                                  >Date de première immatriculation (B)
+                                  >Commentaires sur le test du véhicule
                                 </label>
                                 <input
                                   type="text"
                                   class="form-control"
-                                  value="25/02/2019"
+                                  value="Test routier concluant"
                                 />
                               </div>
                             </div>
@@ -1228,127 +1865,29 @@
                       <div class="details-cat" id="det-7">
                         <h3 class="details-cat-title">Conclusion</h3>
                         <div class="legend-blk position-relative">
-                          <p class="legend-p position-absolute">
-                            Certificat d'immatriculation
-                          </p>
+                          <p class="legend-p position-absolute">Conclusion</p>
                           <div class="twocol-grid position-relative z-index-1">
                             <div>
-                              <div class="info-group mb-5">
-                                <div
-                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
-                                >
-                                  <h5>Certificat d'immatriculation présenté</h5>
-                                  <span class="badge type-1 bg_primary"
-                                    >Présentée</span
-                                  >
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Pays du certificat d'immatriculation
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="France"
-                                  />
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Numéro d'immatriculation sur le certificat
-                                    d'immatriculation (A)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="FE-780-BS"
-                                  />
-                                </div>
-                              </div>
                               <div class="info-group">
                                 <div
                                   class="tertiary-pole-title d-flex justify-content-between align-items-center"
                                 >
-                                  <h5>
-                                    Correspondance du numéro d'immatriculation
-                                    (certificat d'immatriculation/véhicule)
-                                  </h5>
+                                  <h5>Recommandation du spécialiste</h5>
                                   <span class="badge type-1 bg_primary"
-                                    >Oui</span
+                                    >Recommandé</span
                                   >
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Date de première immatriculation (B)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="25/02/2019"
-                                  />
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Date du certificat d'immatriculation actuel
-                                    (I)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="02/06/2021"
-                                  />
-                                </div>
-                                <div class="input-box position-relative">
-                                  <label for="" class="position-absolute"
-                                    >Nom du propriétaire (C.1)
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value="LAURENT SCHMIDT"
-                                  />
                                 </div>
                               </div>
                             </div>
                             <div>
-                              <div
-                                class="tertiary-pole-title d-flex justify-content-between align-items-center mb-4"
-                              >
-                                <h5>Photo du certificat d'immatriculation</h5>
-                              </div>
-
-                              <div class="photo-blk position-relative mb-20">
-                                <img
-                                  src="assets/img/upload-1.jpeg"
-                                  alt=""
-                                  class="img-fluid"
-                                />
-
-                                <button
-                                  class="unlock position-absolute z-index-1"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#unlockModal"
-                                >
-                                  Unlock<img src="assets/img/lock.svg" alt="" />
-                                </button>
-                              </div>
-                              <div class="input-box position-relative mb-20">
-                                <label for="" class="position-absolute"
-                                  >Date de première immatriculation (B)
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value="25/02/2019"
-                                />
-                              </div>
                               <div class="input-box position-relative">
                                 <label for="" class="position-absolute"
-                                  >Date de première immatriculation (B)
+                                  >Commentaires généraux
                                 </label>
                                 <input
                                   type="text"
                                   class="form-control"
-                                  value="25/02/2019"
+                                  value="Je recommande l'achat de ce véhicule malgré les quelques défauts signalés"
                                 />
                               </div>
                             </div>
@@ -1422,6 +1961,12 @@
     ></script>
 
     <!-- Plugin Js  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
     <script src="assets/js/sticky-sidebar.min.js"></script>
 
     <!-- Plugin Activation  -->
@@ -1439,6 +1984,16 @@
           detailsNav.sidebarInner.style.width =
             detailsNav.container.offsetWidth + "px";
         });
+
+        // Script for Unlock form
+
+        function resetUnlockFrom() {
+          const inputs = document.querySelectorAll(
+            "#unlock-inputs .form-control"
+          );
+          inputs.forEach((each) => (each.value = ""));
+          document.querySelector(".error-p").classList.remove("show");
+        }
 
         function unlockForm() {
           // script for auto jump to unlock field
@@ -1462,6 +2017,7 @@
           let unlockCode = "5555";
           unlockForm.addEventListener("submit", function (event) {
             event.preventDefault();
+            // Error Check
             if (unlockCode != "1234") {
               unlockForm.querySelector(".error-p").classList.add("show");
             }
@@ -1469,6 +2025,12 @@
         }
 
         unlockForm();
+        resetUnlockFrom();
+        document
+          .getElementById("unlockModal")
+          .addEventListener("show.bs.modal", function () {
+            resetUnlockFrom();
+          });
       });
     </script>
 
