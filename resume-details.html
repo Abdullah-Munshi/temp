@@ -279,7 +279,7 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show active"
                 id="nav-home"
                 role="tabpanel"
                 aria-labelledby="nav-home-tab"
@@ -473,7 +473,7 @@
                 </div>
               </div>
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade"
                 id="nav-profile"
                 role="tabpanel"
                 aria-labelledby="nav-profile-tab"
@@ -481,17 +481,25 @@
                 <div class="tb-content-wrapper">
                   <div class="details-cat-g-wrap" id="details-content-wrap">
                     <div class="detail-lf" id="detailsNav">
-                      <div class="detailsNav-inner">
+                      <div class="detailsNav-inner" data-scroll-header>
                         <ul
                           class="detail-cat-nav d-flex flex-wrap justify-content-center"
                         >
-                          <li><a href="#det-1">Vendeur</a></li>
-                          <li><a href="#det-2">Détails du véhicule</a></li>
-                          <li><a href="#det-3">Extérieur</a></li>
-                          <li><a href="#det-4">Systèmes & équipements</a></li>
-                          <li><a href="#det-5">Intérieur</a></li>
-                          <li><a href="#det-6">Test du véhicule</a></li>
-                          <li><a href="#det-7">Conclusion</a></li>
+                          <li><a data-scroll href="#det-1">Vendeur</a></li>
+                          <li>
+                            <a data-scroll href="#det-2">Détails du véhicule</a>
+                          </li>
+                          <li><a data-scroll href="#det-3">Extérieur</a></li>
+                          <li>
+                            <a data-scroll href="#det-4"
+                              >Systèmes & équipements</a
+                            >
+                          </li>
+                          <li><a data-scroll href="#det-5">Intérieur</a></li>
+                          <li>
+                            <a data-scroll href="#det-6">Test du véhicule</a>
+                          </li>
+                          <li><a data-scroll href="#det-7">Conclusion</a></li>
                         </ul>
                       </div>
                     </div>
@@ -798,6 +806,7 @@
                           </p>
 
                           <div
+                            id="masonry1"
                             class="twocol-grid row gx-5 z-index-1"
                             data-masonry='{"percentPosition": true }'
                           >
@@ -2071,13 +2080,20 @@
       src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
       integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
       crossorigin="anonymous"
-      async
+      sync
     ></script>
+
+    <!-- Get a specific version -->
     <script src="assets/js/sticky-sidebar.min.js"></script>
+    <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
 
     <!-- Plugin Activation  -->
     <script type="text/javascript">
       window.addEventListener("DOMContentLoaded", function () {
+        function mesureHeight(el) {
+          return document.querySelector(el).offsetHeight;
+        }
+
         // Initialization of sticky sidebar plugin and mesurement of header height
         const getHeaderHeight = document.querySelector("header").offsetHeight;
         let detailsNav = new StickySidebar("#detailsNav", {
@@ -2089,6 +2105,11 @@
         window.addEventListener("resize", function () {
           detailsNav.sidebarInner.style.width =
             detailsNav.container.offsetWidth + "px";
+        });
+
+        // Initialization of Smooth-Scroll
+        let scroll = new SmoothScroll('a[href*="#"]', {
+          header: "[data-scroll-header]",
         });
 
         // Script for Unlock form
@@ -2137,6 +2158,13 @@
           .addEventListener("show.bs.modal", function () {
             resetUnlockFrom();
           });
+
+        // document
+        //   .getElementById("nav-profile-tab")
+        //   .addEventListener("shown.bs.tab", function (event) {
+        //     console.log("hi");
+        //     dmx.parse(`masonry1.reflow()`);
+        //   });
       });
     </script>
 

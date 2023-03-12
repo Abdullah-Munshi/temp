@@ -34,6 +34,7 @@
     <!-- This div responsible for header sticky position detection -->
     <div class="sticky-target"></div>
     <header
+      data-scroll-header
       class="header-area position-fixed top-0 start-0 end-0 d-flex align-items-center"
     >
       <div class="container px-4 px-lg-5">
@@ -1330,13 +1331,20 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Plugin Js -->
     <script src="assets/js/sticky-sidebar.min.js"></script>
+    <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
     <script type="text/javascript">
-      var sidebar = new StickySidebar("#sidebar", {
+      let sidebar = new StickySidebar("#sidebar", {
         containerSelector: "#main-content",
         innerWrapperSelector: ".sidebar__inner",
         topSpacing: 100,
         bottomSpacing: 20,
+      });
+
+      // Initialization of Smooth-Scroll
+      let scroll = new SmoothScroll('a[href*="#"]', {
+        header: "[data-scroll-header]",
       });
     </script>
 
