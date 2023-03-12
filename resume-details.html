@@ -234,9 +234,8 @@
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-cloud-arrow-down"
+                class="bi bi-cloud-arrow-down me-2"
                 viewBox="0 0 16 16"
-                class="me-2"
               >
                 <path
                   fill-rule="evenodd"
@@ -500,7 +499,7 @@
                       <div class="details-cat" id="det-1">
                         <h3 class="details-cat-title">Vendeur</h3>
                         <div class="legend-blk position-relative">
-                          <p class="legend-p position-absolute">Véhicule</p>
+                          <p class="legend-p position-absolute">Vendeur</p>
                           <div class="twocol-grid position-relative z-index-1">
                             <div
                               class="tertiary-pole-title d-flex justify-content-between align-items-center"
@@ -512,13 +511,13 @@
                             </div>
                             <div class="input-box position-relative">
                               <label for="" class="position-absolute"
-                                >Pays vendeur
+                                >Nom du vendeur
                               </label>
                               <div data-blur="true">
                                 <input
                                   type="text"
                                   class="form-control"
-                                  value="France"
+                                  value="LAURENT SCHMIDT"
                                   disabled
                                 />
 
@@ -543,12 +542,12 @@
                             </div>
                             <div class="input-box position-relative">
                               <label for="" class="position-absolute"
-                                >Pays vendeur
+                                >Ville vendeur
                               </label>
                               <input
                                 type="text"
                                 class="form-control"
-                                value="France"
+                                value="Metz"
                               />
                             </div>
                           </div>
@@ -593,7 +592,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="info-group">
+                              <div class="info-group mb-5">
                                 <div
                                   class="tertiary-pole-title d-flex justify-content-between align-items-center"
                                 >
@@ -637,6 +636,113 @@
                                   />
                                 </div>
                               </div>
+                              <div class="info-group mb-5">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>Le vendeur est le propriétaire</h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Oui</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Marque (D.1)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="DS"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Modèle (D.3)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="DS 7 CROSSBACK"
+                                  />
+                                </div>
+
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Numéro de série (VIN) sur le certificat
+                                    d'immatriculation (E)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="VR1J45XXXXXXXXXXXX"
+                                  />
+                                </div>
+                              </div>
+
+                              <div class="info-group mb-5">
+                                <div
+                                  class="tertiary-pole-title d-flex justify-content-between align-items-center"
+                                >
+                                  <h5>
+                                    Correspondance du numéro de série VIN
+                                    certificat d'immatriculation/véhicule
+                                  </h5>
+                                  <span class="badge type-1 bg_primary"
+                                    >Oui</span
+                                  >
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Cylindrée (cm³) (P.1)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="1598"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Puissance (kW) (P.2)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="165"
+                                  />
+                                </div>
+
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Type d'énergie (P.3)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="ES (Essence)"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Nombre de places (S.1)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="5"
+                                  />
+                                </div>
+                                <div class="input-box position-relative">
+                                  <label for="" class="position-absolute"
+                                    >Coût de la carte grise actuelle (Y.6)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="356"
+                                  />
+                                </div>
+                              </div>
                             </div>
                             <div>
                               <div
@@ -662,22 +768,22 @@
                               </div>
                               <div class="input-box position-relative mb-20">
                                 <label for="" class="position-absolute"
-                                  >Date de première immatriculation (B)
+                                  >Puissance fiscale (P.6)
                                 </label>
                                 <input
                                   type="text"
                                   class="form-control"
-                                  value="25/02/2019"
+                                  value="13"
                                 />
                               </div>
                               <div class="input-box position-relative">
                                 <label for="" class="position-absolute"
-                                  >Date de première immatriculation (B)
+                                  >Norme d'émissions atmosphérique (V.9)
                                 </label>
                                 <input
                                   type="text"
                                   class="form-control"
-                                  value="25/02/2019"
+                                  value="Euro 6"
                                 />
                               </div>
                             </div>
